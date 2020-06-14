@@ -1,0 +1,68 @@
+ <View>
+        <RectButton style={styles.bigbutton}>
+          <View style={styles.buttonIcon}>
+            <Icon name='activity' color="#f1f1f1" size={40} />
+          </View>
+        </RectButton>
+      </View>
+
+      <View style={styles.containerGhost}>
+        <View style={styles.ghostButton}>
+          <RectButton>
+            <View style={styles.ghostIcon}>
+              <Icon name='plus' color="#A3d1AB" size={30} />
+            </View>
+          </RectButton>
+        </View>
+      </View>
+
+      const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f1f1f1',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  bigbutton: {
+    width: 250,
+    height: 250,
+    borderRadius: 250 / 2,
+    backgroundColor: '#A3d1AB',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+  },
+
+  buttonIcon: {
+    height: 250,
+    width: 250,
+    borderRadius: 250 / 2,
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  containerGhost: {
+    position: 'absolute',
+    right: 10,
+    bottom: 10
+  },
+
+  ghostButton: {
+    borderColor: '#A3d1AB',
+    borderWidth: 1,
+    width: 100,
+    height: 100,
+    borderRadius: 100 / 2,
+    overflow: 'hidden',
+  },
+
+  ghostIcon: {
+    width: 100,
+    height: 100,
+    borderRadius: 100 / 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+});
