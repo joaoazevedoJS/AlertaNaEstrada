@@ -1,32 +1,31 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler'
+import { Text, View, TouchableOpacity } from 'react-native';
 import { Feather as Icon } from '@expo/vector-icons'
-import { LinearGradient } from 'expo-linear-gradient';
+import { useNavigation } from '@react-navigation/native'
 
-import Header from '../../Components/Header'
+import styles from './styles'
 
-export default function Home() {
+import Button from '../../Components/Button'
+
+export default function Play() {
+  const navigation = useNavigation()
+
+  function handleNavigatePlay() {
+    navigation.navigate('Play')
+  }
+
   return (
-      <LinearGradient
-        style={styles.container}
-        colors={['#333', '#ddd']}
-        start={[1, 0.7]}
-        end={[0, 0]}
-      >
-        <Header />
+    <View style={styles.container}>
+      <Text style={styles.mainTitle}>Sincronizar seu SmartBand ou SmartWatch</Text>
 
+      <Icon name="bluetooth" color="#f5f5f5" size={80} />
 
-        {/* <RectButton>
-        <Image source={start} alt="Start" />
-      </RectButton> */}
-      </LinearGradient>
+      <Button text="Procurar Dispositivo" />
+
+      <TouchableOpacity style={styles.mainBtn} onPress={handleNavigatePlay}>
+        <Text style={styles.mainBtnContent}>Pular</Text>
+        <Icon name="chevron-right" style={styles.mainBtnContent} />
+      </TouchableOpacity>
+    </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-  },
-});

@@ -8,7 +8,7 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     paddingTop: Constants.statusBarHeight + 20,
     paddingHorizontal: 20,
-    marginBottom: 40
+    marginBottom: 40,
   },
   
   group: {
@@ -17,7 +17,7 @@ export default StyleSheet.create({
   },
 
   groupText: {
-    color: "#fff",
+    color: "#f5f5f5",
     fontFamily: "OpenSans_600SemiBold"
   },
 })

@@ -11,20 +11,20 @@ function Header({ toDash = 'sliders' }) {
   function handleNavigationDash() {
     toDash === 'sliders' ?
       navigation.navigate('Dashboard') :
-      navigation.navigate("Home")
+      navigation.goBack()
   }
 
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.group}>
-        <Icon name="user" size={32} color="#fff" />
+        <Icon name="user" size={32} color="#f5f5f5" />
         <Text style={styles.groupText}>Perfil</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.group} onPress={handleNavigationDash} >
-        <Icon name={toDash} size={32} color="#fff" />
+        <Icon name={toDash} size={32} color="#f5f5f5" />
         <Text style={styles.groupText}>
-          { toDash === 'sliders' ? 'Histórico' : '' }
+          { toDash === 'sliders' ? 'Resumo' : '' }
         </Text>
       </TouchableOpacity>
     </View>

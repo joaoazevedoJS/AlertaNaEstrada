@@ -4,15 +4,18 @@ import { Feather as Icon } from '@expo/vector-icons'
 
 import styles from './styles'
 
-function DashItem() {
+function DashItem({
+  title,
+  titleDesc,
+  icon,
+  description
+}) {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.headerContent}>
-          <Text style={styles.headerTitle}>Title</Text>
-          <Text style={styles.headerDescription}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          </Text>
+          <Text style={styles.headerTitle}>{title}</Text>
+          <Text style={styles.headerDescription}>{titleDesc}</Text>
         </View>
         <Icon name='trending-up' size={40} />
       </View>

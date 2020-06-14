@@ -10,6 +10,7 @@ function Dashboard() {
       <Header toDash='arrow-left' />
       
       <DashItem />
+
       <DashItem />
       <DashItem />
 

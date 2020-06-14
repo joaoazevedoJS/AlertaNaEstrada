@@ -6,6 +6,7 @@ export default StyleSheet.create({
     margin: 20,
     paddingHorizontal: 30,
     paddingVertical: 40,
+    borderRadius: 4
   },
 
   header: {
@@ -38,8 +39,4 @@ export default StyleSheet.create({
   contentDescription: {
     fontFamily: 'OpenSans_400Regular'
   }
-
-  // container: {},
-  // container: {},
-  // container: {},
 })

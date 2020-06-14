@@ -66,3 +66,11 @@
     justifyContent: 'center',
   }
 });
+
+
+<LinearGradient
+      style={styles.container}
+      colors={['#131313', '#5D5D6B']}
+      start={[1, 0.7]}
+      end={[0, 0]}
+    >
