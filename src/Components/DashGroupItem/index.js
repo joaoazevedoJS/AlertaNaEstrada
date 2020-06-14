@@ -1,32 +1,34 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import { Feather as Icon } from '@expo/vector-icons'
 
 import styles from './styles'
 
+import LineGradient from '../LineGradient'
+
 function DashItem({
-  title,
-  HeaderDesc,
-  headerIcon,
-  icon,
-  description
+  value1,
+  desc1,
+  value2,
+  desc2,
 }) {
   return (
-    <View style={styles.container}>
-        <Icon name='user' size={40} />
+    <>
+      <View style={styles.dashGroup}>
+        <View style={styles.dashGroupItems}>
+          <Text style={styles.itemTitle}>{value1}</Text>
+          <Text style={styles.itemDescription}>{desc1}</Text>
+        </View>
 
-      <View style={styles.header}>
-        <View style={styles.headerContent}>
-          <Text style={styles.headerTitle}>92 BPM</Text>
-          <Text style={styles.headerDescription}>Frequência Cardíaca</Text>
+        <View style={{ borderRightColor: "#454A73", borderRightWidth: 1 }} />
+
+        <View style={styles.dashGroupItems}>
+          <Text style={styles.itemTitle}>{value2}</Text>
+          <Text style={styles.itemDescription}>{desc2}</Text>
         </View>
       </View>
 
-      <View style={styles.content}>
-        <Icon name={icon} size={24} style={{ marginRight: 24 }} />
-        <Text style={styles.contentDescription}>{description}</Text>
-      </View>
-    </View>
+      <LineGradient hg={4} />
+    </>
   )
 }
 

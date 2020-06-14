@@ -13,9 +13,9 @@ export default StyleSheet.create({
 
   mainTitle: {
     marginBottom: 32,
-    width: 270,
+    width: 280,
     textAlign: 'center',
-    fontFamily: "OpenSans_600SemiBold",
+    fontFamily: "OpenSans_700Bold",
     fontSize: 20,
     lineHeight: 32,
     color: '#f5f5f5'

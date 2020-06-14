@@ -5,7 +5,7 @@ import { RectButton } from 'react-native-gesture-handler'
 
 import styles from './styles'
 
-export default function Temp({ dis, press }) {
+export default function Time({ dis, press }) {
   const [min, setMin] = useState(0)
   const [second, setSecond] = useState(30)
 
@@ -33,8 +33,8 @@ export default function Temp({ dis, press }) {
   return (
     <View style={dis === 'false' ? styles.dis : styles.content}>
       <View style={styles.temp}>
-        <TouchableOpacity>
-          <Icon name="minus" color="#2C2F33" size={24} onPress={handleMinus} />
+        <TouchableOpacity style={styles.btn}>
+          <Icon name="minus" color="#ddd" size={24} onPress={handleMinus} />
         </TouchableOpacity>
 
         <Text style={styles.time}>
@@ -42,9 +42,9 @@ export default function Temp({ dis, press }) {
           {second < 10 ? '0' + second : second}
         </Text>
 
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.btn}>
           <View>
-            <Icon name="plus" color="#2C2F33" size={24} onPress={handlePlus} />
+            <Icon name="plus" color="#ddd" size={24} onPress={handlePlus} />
           </View>
         </TouchableOpacity>
       </View>

@@ -8,13 +8,23 @@ export default StyleSheet.create({
   },
 
   mainTitle: {
-    marginBottom: 32,
     width: 270,
     textAlign: 'center',
-    fontFamily: "OpenSans_600SemiBold",
+    fontFamily: "OpenSans_700Bold",
     fontSize: 20,
     lineHeight: 32,
     color: '#f5f5f5'
+  },
+
+  bluetooth: {
+    alignItems: "center",
+    justifyContent: "center",
+    borderWidth: 4,
+    borderColor: '#E5E5E5',
+    borderRadius: 144/2,
+    width: 144,
+    height: 144,
+    marginTop: 32,
   },
 
   mainBtn: {
@@ -24,7 +34,7 @@ export default StyleSheet.create({
   },
 
   mainBtnContent: {
-    color: '#f5f5f5',
+    color: '#464B74',
     fontFamily: "OpenSans_600SemiBold",
     fontSize: 16,
   }

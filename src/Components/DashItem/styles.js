@@ -1,34 +1,22 @@
 import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
-  container: {
-    backgroundColor: '#F5F5F5',
-    margin: 20,
-    paddingHorizontal: 30,
-    paddingVertical: 40,
-    borderRadius: 4
-  },
-
-  icon: {
-    position: 'absolute',
-    right: 10,
-    top: 10,
-    fontSize: 40,
-  },
-
-  header: {
+  dashItem: {
+    marginTop: 24,
     alignItems: "center",
-    justifyContent: 'center',
+    justifyContent: "center"
   },
 
-  title: {
+  itemTitle: {
     fontSize: 24,
-    marginBottom: 8,
-    fontFamily: 'OpenSans_600SemiBold'
+    color: '#EEEEEE',
+    fontFamily: "OpenSans_700Bold",
   },
 
-  description: {
+  itemDescription: {
+    marginTop: 5,
     fontSize: 14,
-    fontFamily: 'OpenSans_400Regular',
+    color: '#EEEEEE',
+    fontFamily: "OpenSans_600SemiBold",
   },
 })

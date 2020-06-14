@@ -24,15 +24,24 @@ export default StyleSheet.create({
     justifyContent: 'center'
   },
 
+  btn: {
+    width: 35,
+    height: 35,
+    borderRadius: 35/2,
+    backgroundColor: "#55D43C",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+
   time: {
     fontSize: 48,
-    fontFamily: 'OpenSans_600SemiBold',
+    fontFamily: 'OpenSans_700Bold',
     paddingHorizontal: 20,
     color: "#2C2F33",
   },
 
   alter: {
-    backgroundColor: '#CD0000',
+    backgroundColor: '#55D43C',
     height: 40,
     alignItems: 'center',
     justifyContent: 'center',
@@ -41,7 +50,7 @@ export default StyleSheet.create({
 
   alterText : {
     fontFamily: 'OpenSans_600SemiBold',
-    fontSize: 24,
-    color: "#f5f5f5",
+    fontSize: 16,
+    color: "#3F3F48",
   }
 })

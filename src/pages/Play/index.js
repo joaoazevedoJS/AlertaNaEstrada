@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Text, View, ScrollView } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 
 import styles from './styles'
 
@@ -9,7 +8,7 @@ import start from '../../assets/start.png'
 import Header from '../../Components/Header'
 import Button from '../../Components/Button'
 import ButtonImage from '../../Components/ButtonImage'
-import Temp from '../../Components/Temp'
+import Time from '../../Components/Time'
 
 export default function Play() {
   const [display, setDisplay] = useState('false')
@@ -33,7 +32,7 @@ export default function Play() {
           <Button text="Mudar Temporizador" press={handleDisplay} />
         </View>
 
-        <Temp dis={display} press={handleDisplay} />
+        <Time dis={display} press={handleDisplay} />
       </View>
 
     </ScrollView>

@@ -14,13 +14,19 @@ export default function Play() {
     navigation.navigate('Play')
   }
 
+  function handleNavigateBluetooth() {
+    navigation.navigate('Bluetooth')
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.mainTitle}>Sincronizar seu SmartBand ou SmartWatch</Text>
 
-      <Icon name="bluetooth" color="#f5f5f5" size={80} />
+      <View style={styles.bluetooth}>
+        <Icon name="bluetooth" color="#f5f5f5" size={80} style={styles.icon} />
+      </View>
 
-      <Button text="Procurar Dispositivo" />
+      <Button text="Procurar Dispositivo" press={handleNavigateBluetooth} />
 
       <TouchableOpacity style={styles.mainBtn} onPress={handleNavigatePlay}>
         <Text style={styles.mainBtnContent}>Pular</Text>
