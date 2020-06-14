@@ -22,7 +22,7 @@ export default function Play() {
 
   return (
     <ScrollView style={styles.container}>
-      <Header />
+      <Header selected="Alerta" to="Play" />
 
       <View style={styles.main}>
         <Text style={styles.mainTitle}>Aperte o botão para Iniciar os Alertas</Text>

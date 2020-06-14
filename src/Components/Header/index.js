@@ -1,31 +1,46 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
-import { Feather as Icon } from '@expo/vector-icons'
 
 import styles from './styles'
 
-function Header({ toDash = 'sliders' }) {
+function Header({ selected, to }) {
   const navigation = useNavigation()
 
   function handleNavigationDash() {
-    toDash === 'sliders' ?
-      navigation.navigate('Dashboard') :
-      navigation.goBack()
+    navigation.navigate("Dashboard") 
+  }
+
+  function handleNavigationHome() {
+    navigation.navigate("Home") 
+  }
+
+  function handleNavigationAlert() {
+    to ? navigation.navigate(to) :
+    navigation.goBack() 
   }
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.group}>
-        <Icon name="user" size={32} color="#f5f5f5" />
-        <Text style={styles.groupText}>Perfil</Text>
+      <TouchableOpacity 
+        style={selected === 'Perfil' ? styles.btnSelected : styles.btnNavigate }
+        onPress={handleNavigationHome}
+      >
+        <Text style={selected === 'Perfil' ? styles.selected : styles.navigate }>PERFIL</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.group} onPress={handleNavigationDash} >
-        <Icon name={toDash} size={32} color="#f5f5f5" />
-        <Text style={styles.groupText}>
-          { toDash === 'sliders' ? 'Resumo' : '' }
-        </Text>
+      <TouchableOpacity 
+        style={selected === 'Alerta' ? styles.btnSelected : styles.btnNavigate }
+        onPress={handleNavigationAlert}
+      >
+        <Text style={selected === 'Alerta' ? styles.selected : styles.navigate }>ALERTA</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity 
+        style={selected === 'Resumo' ? styles.btnSelected : styles.btnNavigate }
+        onPress={handleNavigationDash}
+      >
+        <Text style={selected === 'Resumo' ? styles.selected : styles.navigate }>RESUMO</Text>
       </TouchableOpacity>
     </View>
   )

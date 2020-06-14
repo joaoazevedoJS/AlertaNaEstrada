@@ -8,7 +8,7 @@ export default StyleSheet.create({
   },
 
   mainTitle: {
-    marginBottom: 40,
+    marginBottom: 32,
     width: 270,
     textAlign: 'center',
     fontFamily: "OpenSans_600SemiBold",
@@ -20,7 +20,7 @@ export default StyleSheet.create({
   mainBtn: {
     flexDirection: "row",
     alignItems: "center",
-    marginTop: 40,
+    marginTop: 32,
   },
 
   mainBtnContent: {

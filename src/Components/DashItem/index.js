@@ -6,23 +6,16 @@ import styles from './styles'
 
 function DashItem({
   title,
-  titleDesc,
+  description,
   icon,
-  description
 }) {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <View style={styles.headerContent}>
-          <Text style={styles.headerTitle}>{title}</Text>
-          <Text style={styles.headerDescription}>{titleDesc}</Text>
-        </View>
-        <Icon name='trending-up' size={40} />
-      </View>
+      <Icon name='user' style={styles.icon} />
 
-      <View style={styles.content}>
-        <Icon name='watch' size={24} style={{ marginRight: 24 }} />
-        <Text style={styles.contentDescription}>Você Andou x Horas</Text>
+      <View style={styles.header}>
+        <Text style={styles.title}>92 BPM</Text>
+        <Text style={styles.description}>Frequência Cardíaca</Text>
       </View>
     </View>
   )

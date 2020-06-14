@@ -4,20 +4,40 @@ import Constants from 'expo-constants'
 export default StyleSheet.create({
   container: {
     flexDirection: 'row',
-    alignSelf: 'stretch',
+    alignItems: "center",
     justifyContent: "space-between",
-    paddingTop: Constants.statusBarHeight + 20,
+    marginTop: Constants.statusBarHeight ,
+    height: 96,
     paddingHorizontal: 20,
-    marginBottom: 40,
+    marginBottom: 8,
+    backgroundColor: '#131420',
   },
   
-  group: {
+  btnSelected: {
+    borderColor: 'transparent',
+    borderBottomColor: "#DDDDDD",
+    borderWidth: 3,
+    width: 100,
+    paddingVertical: 10,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "center"
   },
 
-  groupText: {
-    color: "#f5f5f5",
-    fontFamily: "OpenSans_600SemiBold"
+  selected: {
+    fontSize: 18,
+    color: "#DDDDDD",
+    fontFamily: "OpenSans_700Bold"
+  },
+
+  btnNavigate: {
+    width: 100,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+
+  navigate: {
+    fontSize: 16,
+    color: "#454A73",
+    fontFamily: "OpenSans_700Bold"
   },
 })

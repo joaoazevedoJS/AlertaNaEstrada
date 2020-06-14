@@ -6,13 +6,13 @@ export default StyleSheet.create({
   },
 
   main: {
-    marginTop: 40,
+    marginTop: 32,
     justifyContent: 'center',
     alignItems: 'center'
   },
 
   mainTitle: {
-    marginBottom: 40,
+    marginBottom: 32,
     width: 270,
     textAlign: 'center',
     fontFamily: "OpenSans_600SemiBold",

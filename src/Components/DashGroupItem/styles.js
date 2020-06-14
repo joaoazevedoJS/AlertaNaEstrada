@@ -9,26 +9,34 @@ export default StyleSheet.create({
     borderRadius: 4
   },
 
-  icon: {
-    position: 'absolute',
-    right: 10,
-    top: 10,
-    fontSize: 40,
-  },
-
   header: {
+    flexDirection: 'row',
+    alignSelf: 'stretch',
     alignItems: "center",
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 30,
   },
 
-  title: {
+  headerContent: {
+    width: 200,
+  },
+
+  headerTitle: {
     fontSize: 24,
     marginBottom: 8,
     fontFamily: 'OpenSans_600SemiBold'
   },
 
-  description: {
+  headerDescription: {
     fontSize: 14,
     fontFamily: 'OpenSans_400Regular',
   },
+
+  content: {
+    flexDirection: 'row',
+  },
+
+  contentDescription: {
+    fontFamily: 'OpenSans_400Regular'
+  }
 })

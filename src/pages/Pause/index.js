@@ -21,7 +21,7 @@ export default function Pause() {
 
   return (
     <ScrollView style={styles.container}>
-      <Header />
+      <Header selected="Alerta" to="Pause" />
 
       <View style={styles.main}>
         <Text style={styles.mainTitle}>Aperte o botão para Pausar os Alertas</Text>

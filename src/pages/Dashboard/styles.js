@@ -1,17 +1,14 @@
 import { StyleSheet } from 'react-native'
-import Constants from 'expo-constants'
 
 export default StyleSheet.create({
-  
+  section: {
+    alignItems: "center",
+    marginVertical: 32, 
+  },
 
-  // group: {
-  //   alignItems: "center",
-  //   justifyContent: "center",
-    
-  // },
-
-  // groupText: {
-  //   color: "#fff",
-  //   fontFamily: "OpenSans_400Regular"
-  // },
-})
+  title: {
+    fontSize: 24,
+    fontFamily: "OpenSans_600SemiBold",
+    color: "#ddd",
+  }
+ })

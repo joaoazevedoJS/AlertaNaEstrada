@@ -1,14 +1,20 @@
 import React from 'react'
-import { ScrollView } from 'react-native'
+import { ScrollView, Text, View } from 'react-native'
 
 import Header from '../../Components/Header'
 import DashItem from '../../Components/DashItem'
 
+import styles from './styles'
+
 function Dashboard() {
   return (
     <ScrollView>
-      <Header toDash='arrow-left' />
+      <Header selected="Resumo" />
       
+      <View style={styles.section}>
+        <Text style={styles.title}>Dados Diários</Text>
+      </View>
+
       <DashItem />
 
       <DashItem />
