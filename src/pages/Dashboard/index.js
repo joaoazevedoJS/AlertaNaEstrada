@@ -36,7 +36,7 @@ function Dashboard() {
 
         <DashItem
           value="800 Km"
-          desc="Kilõmetros Percorridos"
+          desc="Quilômetros Percorridos"
         />
 
         <View style={{ marginTop: 8 }}>
@@ -67,7 +67,7 @@ function Dashboard() {
         <View style={{ marginBottom: 32 }}>
           <DashItem
             value="1000 Km"
-            desc="Kilõmetros Percorridos a cada 24 Horas"
+            desc="Quilômetros Percorridos Ontem"
           />
         </View>
       </View>

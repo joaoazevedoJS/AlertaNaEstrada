@@ -31,7 +31,7 @@ export default function Pause() {
     setTimeout(() => {
       setBackToAlert('true')
       navigation.navigate('AlertTruck')
-    }, 2000)
+    }, 20000)
   }, [])
 
   return (

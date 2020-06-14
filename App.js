@@ -1,6 +1,8 @@
 import React from 'react';
 import { AppLoading } from 'expo'
-import { StatusBar } from 'react-native'
+import { StatusBar, YellowBox } from 'react-native'
+
+YellowBox.ignoreWarnings(['Warning: Can\'t perform a React'])
 
 import { OpenSans_400Regular, OpenSans_600SemiBold, OpenSans_700Bold, useFonts } from '@expo-google-fonts/open-sans'
 
